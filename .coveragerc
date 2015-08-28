@@ -1,0 +1,3 @@
+[report]
+omit=
+    */py-virtualenv2.7/*
