@@ -21,9 +21,6 @@ class Cifra(object):
         return grid
 
     def crypt(self, text, key, decrypt=False):
-        """
-            Criptografa texto e decriptografa.
-        """
         if len(text) < len(key):
             raise ValueError(
                 "O tamanho da chave deve ser menor do que o do texto.")
@@ -31,10 +28,13 @@ class Cifra(object):
         key = self.match_size(text, key)
         crypt = ""
         for l in range(len(text)):
-            crypt += self.translater(text[l], key[l], decrypt)
+            crypt += self.translate(text[l], key[l], decrypt)
         return crypt
 
-    def translater(self, letter, alphabet, decrypt=False):
+    def decrypt(self, text, key):
+        return self.crypt(text, key, True)
+
+    def translate(self, letter, alphabet, decrypt=False):
         """
             Traduz letra usando a grelha de Vigenère.
         """
@@ -48,9 +48,9 @@ class Cifra(object):
                     alpha = 'a'
 
                 if self.grid[alpha][pos] == letter.lower():
-                    translater = self.grid[index][pos]
+                    translate = self.grid[index][pos]
                     break
-            return translater
+            return translate
         except:
             return ""
 

@@ -31,35 +31,35 @@ class TestCifra(unittest.TestCase):
             A letra A na grelha de vigenére deve retornar A no alfabeto A
         """
         c = Cifra()
-        self.assertEquals(c.translater('A', 'A'), 'a')
+        self.assertEquals(c.translate('A', 'A'), 'a')
 
     def test_letra_A_no_alfabeto_B_deve_retorno_B(self):
         """
             A letra A na grelha de vigenére deve retornar B no alfabeto B
         """
         c = Cifra()
-        self.assertEquals(c.translater('A', 'B'), 'b')
+        self.assertEquals(c.translate('A', 'B'), 'b')
 
     def test_letra_A_no_alfabeto_C_deve_retorno_C(self):
         """
             A letra A na grelha de vigenére deve retornar C no alfabeto C
         """
         c = Cifra()
-        self.assertEquals(c.translater('A', 'C'), 'c')
+        self.assertEquals(c.translate('A', 'C'), 'c')
 
     def test_letra_Z_no_alfabeto_I_deve_retorno_H(self):
         """
             A letra Z na grelha de vigenére deve retornar H no alfabeto I
         """
         c = Cifra()
-        self.assertEquals(c.translater('Z', 'I'), 'h')
+        self.assertEquals(c.translate('Z', 'I'), 'h')
 
     def test_retornar_None_para_o_que_nao_estiver_traduzido(self):
         """
             Para o que não estiver no grelha de Vigenère retorna None.
         """
         c = Cifra()
-        self.assertEquals(c.translater(1, 'I'), "")
+        self.assertEquals(c.translate(1, 'I'), "")
 
     def test_chave_maior_que_o_texto_base_retornar_exception(self):
         """
@@ -107,3 +107,4 @@ class TestCifra(unittest.TestCase):
         """
         c = Cifra()
         self.assertEquals(c.crypt('GJRLZU', 'UVA', True).upper(), 'MORREU')
+        self.assertEquals(c.decrypt('GJRLZU', 'UVA').upper(), 'MORREU')
