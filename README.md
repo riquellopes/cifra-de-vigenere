@@ -8,14 +8,14 @@ A **cifra de Vigenère** é um método de criptografia que usa uma série de dif
 
 Como criptografar:
 ---------
-```shell
+```sh
     ./run.py --key LIMAO -crypt HENRIQUE
     SMZRWBCQ
 ```
 
 Como descriptografar:
 ------------------
-```shell
+```sh
     ./run.py --key LIMAO -decrypt SMZRWBCQ
     HENRIQUE
 ```
