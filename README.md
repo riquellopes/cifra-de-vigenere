@@ -5,3 +5,17 @@ Cifra Vigenére
 Origem: [Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/Cifra_de_Vigenère).
 
 A **cifra de Vigenère** é um método de criptografia que usa uma série de diferentes cifras de César baseadas em letras de uma senha. Trata-se de uma versão simplificada de uma mais geral cifra de substituição polialfabética, inventada por Leone Battista Alberti cerca de 1465.
+
+Como criptografar:
+---------
+```shell
+    ./run.py --key LIMAO -crypt HENRIQUE
+    SMZRWBCQ
+```
+
+Como descriptografar:
+------------------
+```shell
+    ./run.py --key LIMAO -decrypt SMZRWBCQ
+    HENRIQUE
+```
