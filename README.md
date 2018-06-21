@@ -1,6 +1,4 @@
-[![Build Status](https://snap-ci.com/riquellopes/cifra-de-vigenere/branch/master/build_image)](https://snap-ci.com/riquellopes/cifra-de-vigenere/branch/master)
 [![Coverage Status](https://coveralls.io/repos/riquellopes/cifra-de-vigenere/badge.svg?branch=master&service=github)](https://coveralls.io/github/riquellopes/cifra-de-vigenere?branch=master)
-[![Dependency Status](https://gemnasium.com/riquellopes/cifra-de-vigenere.svg)](https://gemnasium.com/riquellopes/cifra-de-vigenere)
 Cifra Vigenére
 =========
 Origem: [Wikipédia, a enciclopédia livre](https://pt.wikipedia.org/wiki/Cifra_de_Vigenère).
