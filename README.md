@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/riquellopes/cifra-de-vigenere.svg?branch=master)](https://travis-ci.org/riquellopes/cifra-de-vigenere)
 [![Coverage Status](https://coveralls.io/repos/riquellopes/cifra-de-vigenere/badge.svg?branch=master&service=github)](https://coveralls.io/github/riquellopes/cifra-de-vigenere?branch=master)
 Cifra Vigenére
 =========
